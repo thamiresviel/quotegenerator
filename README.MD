@@ -1,5 +1,10 @@
 # 📜 Gerador de Citações
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Status](https://img.shields.io/badge/status-active-success.svg)
+![Made with](https://img.shields.io/badge/Made%20with-JS-yellow)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+
 Um projeto simples e elegante desenvolvido com HTML, CSS e JavaScript que exibe citações aleatórias e permite alternar entre tema claro e escuro.
 
 ## ✨ Demonstração
