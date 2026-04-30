@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de Citações</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Simple Quote Generator</h1>
-    <div class="quoteDisplay">
-        <!--As citações aparecerão aqui -->
-    </div>
-    <button onclick="newQuote()">Nova Citação</button>
+<button class="toggle-btn" onclick="toggleTheme()" id="themeToggle">☾ Dark</button>
+
+<div class="container">
+  <h1>Gerador de Citações</h1>
+  <div class="quote-card">
+    <div id="quoteDisplay">Clique no botão para uma citação</div>
+  </div>
+  <div class="dash"></div>
+  <button onclick="newQuote()">Nova Citação</button>
+</div>
+   
     <script src="js/script.js"></script>
 </body>
 </html>

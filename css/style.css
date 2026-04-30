@@ -1,0 +1,143 @@
+:root {
+    --bg: #f5f0e8;
+    --surface: #fff;
+    --text-main: #1a1a1a;
+    --text-muted: #6b6460;
+    --border: #d4cfc8;
+    --btn-border: #1a1a1a;
+    --btn-text: #1a1a1a;
+    --btn-hover-bg: #1a1a1a;
+    --btn-hover-text: #f5f0e8;
+    --quote-color: #2d2825;
+    --dash-color: #c9a96e;
+}
+
+[data-theme="dark"] {
+    --bg: #131210;
+    --surface: #1e1c19;
+    --text-main: #f0ebe3;
+    --text-muted: #8a8278;
+    --border: #2e2b27;
+    --btn-border: #f0ebe3;
+    --btn-text: #f0ebe3;
+    --btn-hover-bg: #f0ebe3;
+    --btn-hover-text: #131210;
+    --quote-color: #e8e2d9;
+    --dash-color: #c9a96e;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0;}
+
+body {
+  background: var(--bg);
+  color: var(--text-main);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Botão de altenar tema */
+.toggle-btn {
+    position: fixed;
+    top: 1.2rem;
+    right: 1.2rem;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 6px 12px;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    border-radius: 2px;
+    transition: all 0.2s;
+    font-family: sans-serif;
+}
+.toggle-btn:hover {
+  border-color: var(--text-main);
+  color: var(--text-main);
+}
+.container {
+  max-width: 620px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+    font-size: 13px;
+    font-family: sans-serif;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+/* card da citação */
+.quote-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 2.8rem 2.5rem;
+    border-radius: 2px;
+    min-height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 2rem;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+/* Aspas decorativas */
+.quote-card::before {
+  content: '\201C';
+  position: absolute;
+  top: -0.6rem;
+  left: 1.5rem;
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--dash-color);
+  font-family: Georgia, serif;
+  opacity: 0.5;
+}
+
+#quoteDisplay {
+  font-size: 1.35rem;
+  line-height: 1.7;
+  color: var(--quote-color);
+  font-style: italic;
+  transition: opacity 0.3s;
+}
+
+/* Divisor decorativo */
+
+.dash {
+  width: 40px;
+  height: 1px;
+  background: var(--dash-color);
+  margin: 0 auto 1.8rem;
+}
+
+/* Botão flat */
+button {
+  background: transparent;
+  border: 1px solid var(--btn-border);
+  color: var(--btn-text);
+  font-family: sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 12px 32px;
+  cursor: pointer;
+  border-radius: 1px;
+  transition: background 0.18s, color 0.18s;
+}
+button:hover {
+  background: var(--btn-hover-bg);
+  color: var(--btn-hover-text);
+}
+button:active { opacity: 0.75; }
