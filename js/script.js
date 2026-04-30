@@ -1,9 +1,9 @@
 var quotes = [
-    '"Thamires Professora de TI"',
-    '"Bananona"',
-    '"Gabi Fofinha"',
-    '"Eu to terminando de fazer aqui"',
-    '"Eu sou gaguinho — Gago 2026"'
+    '"Frase 1"',
+    '"Frase 2"',
+    '"Frase 3"',
+    '"Frase 4"',
+    '"Frase 5"'
 ]
 
 function newQuote() {
